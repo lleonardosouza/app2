@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cálculo Desconto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+<ion-item>
+  <ion-label position="floating">Valor</ion-label>
+  <ion-input [(ngModel)]="valor" type="number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Desconto</ion-label>
+  <ion-input [(ngModel)]="porcentagem" type="number"></ion-input>
+</ion-item>
+
+  <ion-button (click)="enviadados()" expand="full" color="secondary">
+    Calcular Desconto
+  </ion-button>
+
+  <ion-button  color="danger" expand="full" (click)="closeModal()">
+    Fechar
+  </ion-button>
+</ion-content>
